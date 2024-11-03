@@ -1,18 +1,20 @@
-module.exports = [
+import love from 'eslint-config-love'
+
+export default [
   {
-    ...require('eslint-config-love'),
-    files: [
-      '**/*.js',
-      '**/*.jsx',
-      '**/*.ts',
-      '**/*.tsx'
-    ],
+    ...love,
+    files: ['**/*.js', '**/*.ts'],
     parserOptions: {
       "project": "./tsconfig.json"
     },
     rules: {
       "@typescript-eslint/consistent-type-definitions": "off",
       "@typescript-eslint/strict-boolean-expressions": "off",
-    }
-  }
+    },
+    ignore: [
+      'node_modules',
+      '.vscode'
+    ]
+  },
 ]
+

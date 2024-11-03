@@ -27,6 +27,6 @@
     "src",
   ],
   "exclude": [
-    "eslint.config.cjs"
+    "eslint.config.mjs"
   ]
 }
