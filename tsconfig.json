@@ -26,4 +26,7 @@
   "include": [
     "src",
   ],
+  "exclude": [
+    "eslint.config.cjs"
+  ]
 }
