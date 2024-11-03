@@ -13,7 +13,9 @@ export default [
     },
     ignore: [
       'node_modules',
-      '.vscode'
+      '.vscode',
+      'jest.config.js',
+      'coverage'
     ]
   },
 ]
