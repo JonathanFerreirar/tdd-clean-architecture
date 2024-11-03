@@ -8,11 +8,20 @@ importers:
 
   .:
     devDependencies:
+      '@types/node':
+        specifier: ^22.8.6
+        version: 22.8.6
       git-commit-msg-linter:
         specifier: ^5.0.8
         version: 5.0.8
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
 
 packages:
+
+  '@types/node@22.8.6':
+    resolution: {integrity: sha512-tosuJYKrIqjQIlVCM4PEGxOmyg3FCPa/fViuJChnGeEIhjA46oy8FMVoF9su1/v8PNs2a8Q0iFNyOx0uOF91nw==}
 
   ansi-styles@3.2.1:
     resolution: {integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==}
@@ -64,10 +73,22 @@ packages:
     resolution: {integrity: sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==}
     engines: {node: '>=10'}
 
+  typescript@5.6.3:
+    resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   underscore@1.13.7:
     resolution: {integrity: sha512-GMXzWtsc57XAtguZgaQViUOzs0KTkk8ojr3/xAxXLITqf/3EMwxC0inyETfDFjH/Krbhuep0HNbbjI9i/q3F3g==}
 
+  undici-types@6.19.8:
+    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
+
 snapshots:
+
+  '@types/node@22.8.6':
+    dependencies:
+      undici-types: 6.19.8
 
   ansi-styles@3.2.1:
     dependencies:
@@ -116,4 +137,8 @@ snapshots:
     dependencies:
       has-flag: 4.0.0
 
+  typescript@5.6.3: {}
+
   underscore@1.13.7: {}
+
+  undici-types@6.19.8: {}
